@@ -25,7 +25,7 @@ test.skip("Drag And Drop", async ({page}) => {
     await page.waitForTimeout(3000);
 })
 
-test.only("Iframe Handling", async ({page}) => {
+test.skip("Iframe Handling", async ({page}) => {
     await page.goto('file:///F:/Code/Playwright/Playwright%20with%20Typescript%20-%20Vasyl%20Shpak/tests/workshop_3/index.html');
     const iframeElement = await page.frame({name: 'iframeName'});
     const inputSelector = '#iframe-input';
